@@ -53,25 +53,25 @@ namespace SmartSpeed
             AcSmartSpeed.currSetting = AcSmartSpeed.Option.Normal;
             AcSmartSpeed.InitUltraFastMode();
             AcSmartSpeed.InitEventSpeedControl();
-            Log.Message(AcSmartSpeed.AssemblyName + " injected.");
+           // Log.Message(AcSmartSpeed.AssemblyName + " injected.");
         }
 
         private static void InitUltraFastMode()
         {
-            MethodInfo source = typeof(TimeControls).GetMethod("DoTimeControlsGUI", BindingFlags.Static | BindingFlags.Public);
-            MethodInfo dest = typeof(TimeControls).GetMethod("DoTimeControlsGUI", BindingFlags.Static | BindingFlags.Public);
+            MethodInfo source = typeof(RimWorld.TimeControls).GetMethod("DoTimeControlsGUI", BindingFlags.Static | BindingFlags.Public);
+            MethodInfo dest = typeof(Detouring.TimeControls).GetMethod("DoTimeControlsGUI", BindingFlags.Static | BindingFlags.Public);
             Detour.TryDetourFromTo(source, dest);
 
         }
 
         private static void InitEventSpeedControl()
         {
-            MethodInfo source = typeof(TickManager).GetProperty("TickRateMultiplier", BindingFlags.Instance | BindingFlags.Public).GetGetMethod();
-            MethodInfo dest = typeof(TickManager).GetProperty("TickRateMultiplier", BindingFlags.Instance | BindingFlags.Public).GetGetMethod();
+            MethodInfo source = typeof(Verse.TickManager).GetProperty("TickRateMultiplier", BindingFlags.Instance | BindingFlags.Public).GetGetMethod();
+            MethodInfo dest = typeof(Detouring.TickManager).GetProperty("TickRateMultiplier", BindingFlags.Instance | BindingFlags.Public).GetGetMethod();
             Detour.TryDetourFromTo(source, dest);
 
-            source = typeof(TickManager).GetMethod("NothingHappeningInGame", BindingFlags.Instance | BindingFlags.NonPublic);
-            dest = typeof(TickManager).GetMethod("NothingHappeningInGame", BindingFlags.Instance | BindingFlags.NonPublic);
+            source = typeof(Detouring.TickManager).GetMethod("NothingHappeningInGame", BindingFlags.Instance | BindingFlags.NonPublic);
+            dest = typeof(Verse.TickManager).GetMethod("NothingHappeningInGame", BindingFlags.Instance | BindingFlags.NonPublic);
             Detour.TryDetourFromTo(source, dest);
 
         }
