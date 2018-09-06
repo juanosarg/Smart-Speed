@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LanguageData>
+  <EventSpeed>이벤트 속도</EventSpeed>
+  <EventSpeedLabel>이벤트 속도를 설정합니다</EventSpeedLabel>
+  <Slow>느림</Slow>
+  <Normal>보통</Normal>
+  <Fast>빠름</Fast>
+  <Half>절반</Half>
+</LanguageData>
