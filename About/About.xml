@@ -2,6 +2,11 @@
 <ModMetaData>
 	<name>Smart Speed</name>
 	<author>Sarg</author>
+	<supportedVersions>
+      <li>1.0</li>
+      <li>1.1</li>
+   </supportedVersions>
+	<packageId>sarg.smartspeed</packageId>
 	<targetVersion>1.0.2059</targetVersion>
 	<description>Allows the use of ultra speed and change event speed multiplier.
 	
