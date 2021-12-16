@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using Verse;
 
 namespace SmartSpeed.Detouring
@@ -51,17 +51,16 @@ namespace SmartSpeed.Detouring
                 case 3:
                     if (Current.Game.CurrentMap == null)
                     {
-                        return 150f;
+                        if (Settings.Nomapselected == true) { return 150f; }
                     }
                     if (this.NothingHappeningInGame())
-                    {
-                        return 12f;
+                    {if (Settings.Nothinghappening == true) { return 12f; }
                     }
-                    return return Settings.threespeed;;
+                    return Settings.threespeed;;
                 case 4:
                     if (Current.Game.CurrentMap == null)
                     {
-                        return 250f;
+                            if (Settings.Nomapselected == true) { return 250f; }
                     }
                     return Settings.fourspeed;
                 default:
