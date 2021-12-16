@@ -45,9 +45,9 @@ namespace SmartSpeed.Detouring
                 case 0:
                     return 0f;
                 case 1:
-                    return 1f;
+                    return Settings.onespeed;
                 case 2:
-                    return 3f;
+                    return Settings.twospeed;
                 case 3:
                     if (Current.Game.CurrentMap == null)
                     {
@@ -57,13 +57,13 @@ namespace SmartSpeed.Detouring
                     {
                         return 12f;
                     }
-                    return 6f;
+                    return return Settings.threespeed;;
                 case 4:
                     if (Current.Game.CurrentMap == null)
                     {
                         return 250f;
                     }
-                    return 15f;
+                    return Settings.fourspeed;
                 default:
                     return -1f;
             }
