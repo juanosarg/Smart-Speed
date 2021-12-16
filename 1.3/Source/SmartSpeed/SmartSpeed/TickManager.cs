@@ -37,7 +37,6 @@ namespace SmartSpeed.Detouring
                 return TickRate(currTimeSpeed);
             }
         }
-
         private float TickRate(TimeSpeed currTimeSpeed)
         {
             switch ((int)currTimeSpeed)
