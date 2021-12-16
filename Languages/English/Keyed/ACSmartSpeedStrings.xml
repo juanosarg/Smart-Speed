@@ -7,4 +7,9 @@
   <Normal>Normal</Normal>
   <Fast>Fast</Fast>
   <Half>Half</Half>
+  <Settings.onespeed>One Speed ({0} TPS)			Vanilla is 60</Settings.onespeed>
+  <Settings.twospeed>Two Speed ({0} TPS)			Vanilla is 180</Settings.twospeed>
+  <Settings.threespeed>Three Speed ({0} TPS)			Vanilla is 360</Settings.threespeed>
+  <Settings.fourspeed>Four Speed ({0} TPS)			Not in Vanilla</Settings.fourspeed>
+		
 </LanguageData>
