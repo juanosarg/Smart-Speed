@@ -12,22 +12,6 @@ namespace SmartSpeed.Detouring
         public static float threespeed = 5f;
         public static float fourspeed = 6f;
 
-        /* //The GUI Itself--OLD
-         public void DoWindowContents(Rect canvas)
-         {
-             var list = new Listing_Standard();
-             list.ColumnWidth = canvas.width;
-             list.Begin(canvas);
-
-             // One Speed
-             list.Label("onespeed".Translate(onespeed.ToString()));
-             onespeed = list.Slider(onespeed, .1f, 10f);
-             list.End();
-
-
-         }
-
-         */
        
         //Saving the Data to an .xml for future retreval
         public override void ExposeData()
@@ -50,7 +34,7 @@ namespace SmartSpeed.Detouring
             this.settings = GetSettings<Settings>();
 
         }
-       
+       //The GUI
         public override void DoSettingsWindowContents(Rect canvas)
         {
             Listing_Standard listingStandard = new Listing_Standard();
