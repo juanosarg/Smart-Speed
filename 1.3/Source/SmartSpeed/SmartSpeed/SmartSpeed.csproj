@@ -34,6 +34,10 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="0Harmony, Version=2.2.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Lib.Harmony.2.2.1\lib\net472\0Harmony.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Assembly-CSharp">
       <HintPath>..\..\..\..\..\..\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
       <Private>False</Private>
@@ -290,12 +294,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AcSmartSpeed.cs" />
-    <Compile Include="Detour.cs" />
+    <Compile Include="Options\SettingsHelper.cs" />
+    <Compile Include="Options\SmartSpeed_Settings.cs" />
+    <Compile Include="Options\SmartSpeed_SettingsController.cs" />
+    <Compile Include="SmartSpeed.cs" />
+    <Compile Include="Harmony\HarmonyInstance.cs" />
+    <Compile Include="Harmony\TickManager_TickRateMultiplier.cs" />
+    <Compile Include="Harmony\TimeControls_DoTimeControlsGUI.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TexButton.cs" />
-    <Compile Include="TickManager.cs" />
-    <Compile Include="TimeControls.cs" />
+    <Compile Include="GraphicCache\AlternateButtons.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
