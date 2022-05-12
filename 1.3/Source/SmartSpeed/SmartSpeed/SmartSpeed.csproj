@@ -297,7 +297,7 @@
     <Compile Include="Options\SettingsHelper.cs" />
     <Compile Include="Options\SmartSpeed_Settings.cs" />
     <Compile Include="Options\SmartSpeed_SettingsController.cs" />
-    <Compile Include="SmartSpeed.cs" />
+    <Compile Include="Enum\Option.cs" />
     <Compile Include="Harmony\HarmonyInstance.cs" />
     <Compile Include="Harmony\TickManager_TickRateMultiplier.cs" />
     <Compile Include="Harmony\TimeControls_DoTimeControlsGUI.cs" />
@@ -307,5 +307,6 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

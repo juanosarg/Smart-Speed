@@ -90,12 +90,12 @@ namespace SmartSpeed
                 {
                     var floatOptionList = new List<FloatMenuOption>();
 
-                    floatOptionList.Add(new FloatMenuOption(string.Format("Slow".Translate() + " {0}", SmartSpeed.currSetting == SmartSpeed.Option.Slow ? "V" : ""), delegate { SmartSpeed.currSetting = SmartSpeed.Option.Slow; }));
-                    floatOptionList.Add(new FloatMenuOption(string.Format("Normal".Translate() + " {0}", SmartSpeed.currSetting == SmartSpeed.Option.Normal ? "V" : ""), delegate { SmartSpeed.currSetting = SmartSpeed.Option.Normal; }));
-                    floatOptionList.Add(new FloatMenuOption(string.Format("Fast".Translate() + " {0}", SmartSpeed.currSetting == SmartSpeed.Option.Fast ? "V" : ""), delegate { SmartSpeed.currSetting = SmartSpeed.Option.Fast; }));
-                    floatOptionList.Add(new FloatMenuOption(string.Format("Half".Translate() + " {0}", SmartSpeed.currSetting == SmartSpeed.Option.Half ? "V" : ""), delegate { SmartSpeed.currSetting = SmartSpeed.Option.Half; }));
-                    floatOptionList.Add(new FloatMenuOption(string.Format("Ignore".Translate() + " {0}", SmartSpeed.currSetting == SmartSpeed.Option.Ignore ? "V" : ""), delegate { SmartSpeed.currSetting = SmartSpeed.Option.Ignore; }));
-                    var window = new FloatMenu(floatOptionList, "EventSpeed".Translate());
+                    floatOptionList.Add(new FloatMenuOption(string.Format("SS_Slow".Translate() + " {0}", SmartSpeed_Settings.currSetting == SmartSpeed.Option.Slow ? "V" : ""), delegate { SmartSpeed_Settings.currSetting = SmartSpeed.Option.Slow; }));
+                    floatOptionList.Add(new FloatMenuOption(string.Format("SS_Normal".Translate() + " {0}", SmartSpeed_Settings.currSetting == SmartSpeed.Option.Normal ? "V" : ""), delegate { SmartSpeed_Settings.currSetting = SmartSpeed.Option.Normal; }));
+                    floatOptionList.Add(new FloatMenuOption(string.Format("SS_Fast".Translate() + " {0}", SmartSpeed_Settings.currSetting == SmartSpeed.Option.Fast ? "V" : ""), delegate { SmartSpeed_Settings.currSetting = SmartSpeed.Option.Fast; }));
+                    floatOptionList.Add(new FloatMenuOption(string.Format("SS_Half".Translate() + " {0}", SmartSpeed_Settings.currSetting == SmartSpeed.Option.Half ? "V" : ""), delegate { SmartSpeed_Settings.currSetting = SmartSpeed.Option.Half; }));
+                    floatOptionList.Add(new FloatMenuOption(string.Format("SS_Ignore".Translate() + " {0}", SmartSpeed_Settings.currSetting == SmartSpeed.Option.Ignore ? "V" : ""), delegate { SmartSpeed_Settings.currSetting = SmartSpeed.Option.Ignore; }));
+                    var window = new FloatMenu(floatOptionList, "SS_EventSpeed".Translate());
                     Find.WindowStack.Add(window);
 
                     // use event so it doesn't bubble through

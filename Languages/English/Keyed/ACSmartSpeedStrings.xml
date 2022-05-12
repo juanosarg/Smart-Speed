@@ -1,12 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 
 <LanguageData>
-  <EventSpeed>Event Speed</EventSpeed>
+  <SS_EventSpeed>Event Speed</SS_EventSpeed>
   <EventSpeedLabel>Change Event Speed</EventSpeedLabel>
-  <Slow>Slow</Slow>
-  <Normal>Normal</Normal>
-  <Fast>Fast</Fast>
-  <Half>Half</Half>
+  <SS_Slow>Slow (half of normal speed)</SS_Slow>
+  <SS_Normal>Normal</SS_Normal>
+  <SS_Fast>Fast (twice normal speed)</SS_Fast>
+  <SS_Half>Half current speed</SS_Half>
+  <SS_Ignore>Ignore (no slowdown)</SS_Ignore>
   
   <SS_normalSpeed>Normal speed (speed 1)</SS_normalSpeed>
   <SS_normalSpeedTooltip>Multiplier for normal speed. Default is 1, which translates to 60 ticks per second.</SS_normalSpeedTooltip>

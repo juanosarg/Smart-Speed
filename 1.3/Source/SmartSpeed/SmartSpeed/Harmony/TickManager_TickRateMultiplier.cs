@@ -31,16 +31,16 @@ namespace SmartSpeed
 				{
 					__result= 0f;
 				}
-				switch (SmartSpeed.currSetting)
+				switch (SmartSpeed_Settings.currSetting)
 				{
 					case SmartSpeed.Option.Slow:
-						__result = 0.5f;
+						__result = SmartSpeed_Settings.normalSpeed/2;
 						break;
 					case SmartSpeed.Option.Normal:
-						__result = 1f;
+						__result = SmartSpeed_Settings.normalSpeed;
 						break;
 					case SmartSpeed.Option.Fast:
-						__result = 2f;
+						__result = SmartSpeed_Settings.normalSpeed*2;
 						break;
 					case SmartSpeed.Option.Half:
 						__result = TickRate(curTimeSpeed, ___UltraSpeedBoost, __instance) / 2f;

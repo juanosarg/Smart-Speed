@@ -30,6 +30,8 @@ namespace SmartSpeed
         public const float ultrafastSpeedBase = 15;
         public const float maxUltrafastSpeed = 200;
 
+        public static Option currSetting = Option.Normal;
+
 
 
 
@@ -42,6 +44,7 @@ namespace SmartSpeed
             Scribe_Values.Look(ref fastSpeed, "fastSpeed", fastSpeedBase, true);
             Scribe_Values.Look(ref superfastSpeed, "superfastSpeed", superfastSpeedBase, true);
             Scribe_Values.Look(ref ultrafastSpeed, "ultrafastSpeed", ultrafastSpeedBase, true);
+            Scribe_Values.Look(ref currSetting, "currSetting", Option.Normal, true);
 
 
 
