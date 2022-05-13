@@ -18,7 +18,10 @@ namespace SmartSpeed
     [HarmonyPatch("DoTimeControlsGUI")]
     public static class SmartSpeed_TimeControls_DoTimeControlsGUI_Transpiler
     {
-        static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
+
+        public static bool Yes() { return true; }
+
+        public static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
         {
 
 
@@ -27,7 +30,8 @@ namespace SmartSpeed
             int instructionNumber = 0;
             FieldInfo buttons = AccessTools.Field(typeof(TexButton), "SpeedButtonTextures");
             FieldInfo newButtons = AccessTools.Field(typeof(AlternateButtons), "SpeedButtonTextures");
-
+            MethodInfo getdevmode = AccessTools.Method(typeof(Prefs), "get_DevMode");
+          
 
             for (var i = 0; i < codes.Count; i++)
             {
@@ -49,7 +53,16 @@ namespace SmartSpeed
                     
                     yield return new CodeInstruction(OpCodes.Ldsfld,newButtons);
                 }
-                
+                else
+                if (code.opcode == OpCodes.Call && code.Calls(getdevmode))
+                {
+
+                    CodeInstruction newcode = new CodeInstruction(opcode: OpCodes.Call, AccessTools.Method(typeof(SmartSpeed_TimeControls_DoTimeControlsGUI_Transpiler), nameof(Yes)));
+                    newcode.labels = code.labels;
+                    yield return newcode;
+
+
+                }
                 else
                 {
                     yield return code;
