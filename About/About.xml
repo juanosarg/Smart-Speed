@@ -21,7 +21,7 @@
 	
 &lt;size=24&gt;Features&lt;/size&gt;
 
-- Enable ultra fast speed without devmMode
+- Enable ultra fast speed without Dev Mode
 - Add ultra speed icon
 - Set Event speed multiplier
 - Mod options: configure how much each of the speeds affects the game
@@ -31,7 +31,7 @@
 - Right click on speed control UI
 - Slow : x0.5 speed (half of normal speed)
 - Normal : x1 speed (default setting)
-- Fast : x2 speed (as same as fast speed)
+- Fast : x2 speed (double of normal speed)
 - Half : Half of current game speed
 - Ignore : Ignore force event speed 
 
