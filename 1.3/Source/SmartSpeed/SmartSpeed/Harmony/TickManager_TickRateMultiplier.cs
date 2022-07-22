@@ -58,9 +58,11 @@ namespace SmartSpeed
 
 		}
 
+		private static readonly MethodInfo privatemethod = AccessTools.Method(typeof(TickManager), "NothingHappeningInGame");
+
 		private static float TickRate(TimeSpeed currTimeSpeed, bool ultraspeedboost, TickManager manager)
 		{
-			MethodInfo privatemethod = AccessTools.Method(typeof(TickManager), "NothingHappeningInGame");
+			
 			switch (currTimeSpeed)
 			{
 				case TimeSpeed.Paused:

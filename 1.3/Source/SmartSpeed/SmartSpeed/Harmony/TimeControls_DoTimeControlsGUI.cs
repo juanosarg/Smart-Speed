@@ -21,6 +21,10 @@ namespace SmartSpeed
 
         public static bool Yes() { return true; }
 
+        private static readonly FieldInfo buttons = AccessTools.Field(typeof(TexButton), "SpeedButtonTextures");
+        private static readonly FieldInfo newButtons = AccessTools.Field(typeof(AlternateButtons), "SpeedButtonTextures");
+        private static readonly MethodInfo getdevmode = AccessTools.Method(typeof(Prefs), "get_DevMode");
+
         public static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
         {
 
@@ -28,9 +32,9 @@ namespace SmartSpeed
             var codes = instructions.ToList();
             bool found = false;
             int instructionNumber = 0;
-            FieldInfo buttons = AccessTools.Field(typeof(TexButton), "SpeedButtonTextures");
-            FieldInfo newButtons = AccessTools.Field(typeof(AlternateButtons), "SpeedButtonTextures");
-            MethodInfo getdevmode = AccessTools.Method(typeof(Prefs), "get_DevMode");
+            
+            
+            
           
 
             for (var i = 0; i < codes.Count; i++)
@@ -87,14 +91,11 @@ namespace SmartSpeed
         {
             DoConfigGUI(timerRect);
             timerRect.x -= 14f;
-            FieldInfo size = AccessTools.Field(typeof(TimeControls), "TimeButSize");
+            
             size.SetValue(typeof(TimeControls), new Vector2(28, 24f));
-
-           
-
         }
 
-
+        private static readonly FieldInfo size = AccessTools.Field(typeof(TimeControls), "TimeButSize");
 
         public static void DoConfigGUI(Rect timeRect)
         {
