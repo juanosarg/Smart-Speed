@@ -2,7 +2,7 @@
 using RimWorld;
 using Verse;
 using System.Collections.Generic;
-using System.Linq;
+using System;
 using System.Reflection;
 using System.Reflection.Emit;
 using UnityEngine;
@@ -58,7 +58,7 @@ namespace SmartSpeed
 
 		}
 
-		private static readonly MethodInfo privatemethod = AccessTools.Method(typeof(TickManager), "NothingHappeningInGame");
+		private static readonly Func<TickManager, bool> privatemethod = AccessTools.MethodDelegate<Func<TickManager, bool>>("TickManager:NothingHappeningInGame");
 
 		private static float TickRate(TimeSpeed currTimeSpeed, bool ultraspeedboost, TickManager manager)
 		{
@@ -76,7 +76,7 @@ namespace SmartSpeed
 					{
 						return SmartSpeed_Settings.superfastSpeed*20;
 					}
-					if ((bool)privatemethod.Invoke(manager,null))
+					if (privatemethod.Invoke(manager))
 					{
 						return SmartSpeed_Settings.superfastSpeed*2;
 					}

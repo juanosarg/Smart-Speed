@@ -91,11 +91,10 @@ namespace SmartSpeed
         {
             DoConfigGUI(timerRect);
             timerRect.x -= 14f;
-            
-            size.SetValue(typeof(TimeControls), new Vector2(28, 24f));
+            size(null) = new Vector2(28, 24f);
         }
 
-        private static readonly FieldInfo size = AccessTools.Field(typeof(TimeControls), "TimeButSize");
+        private static readonly AccessTools.FieldRef<object, Vector2> size =  AccessTools.FieldRefAccess<Vector2>(typeof(TimeControls),"TimeButSize");
 
         public static void DoConfigGUI(Rect timeRect)
         {
