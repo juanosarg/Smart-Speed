@@ -1,7 +1,0 @@
-E:\SteamLibrary\steamapps\common\RimWorld\Mods\Smart-Speed-B19\Source\SmartSpeed\SmartSpeed\obj\Debug\SmartSpeed.csprojAssemblyReference.cache
-E:\SteamLibrary\steamapps\common\RimWorld\Mods\Smart-Speed-B19\Source\SmartSpeed\SmartSpeed\obj\Debug\SmartSpeed.csproj.CoreCompileInputs.cache
-E:\SteamLibrary\steamapps\common\RimWorld\Mods\Smart-Speed-B19\Assemblies\SmartSpeed.dll
-E:\SteamLibrary\steamapps\common\RimWorld\Mods\Smart-Speed-B19\Source\SmartSpeed\SmartSpeed\obj\Debug\SmartSpeed.dll
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Smart Speed\Assemblies\SmartSpeed.dll
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Smart Speed\Source\SmartSpeed\SmartSpeed\obj\Debug\SmartSpeed.csprojResolveAssemblyReference.cache
-C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Smart Speed\Source\SmartSpeed\SmartSpeed\obj\Debug\SmartSpeed.dll
