@@ -21,3 +21,11 @@ C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Smart-Speed\1.5\Asse
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Smart-Speed\1.5\Source\SmartSpeed\SmartSpeed\obj\Debug\SmartSpeed.csproj.AssemblyReference.cache
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Smart-Speed\1.5\Source\SmartSpeed\SmartSpeed\obj\Debug\SmartSpeed.csproj.CoreCompileInputs.cache
 C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Smart-Speed\1.5\Source\SmartSpeed\SmartSpeed\obj\Debug\SmartSpeed.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Smart-Speed\1.6\Assemblies\SmartSpeed.dll
+E:\Steam\steamapps\common\RimWorld\Mods\Smart-Speed\1.6\Source\SmartSpeed\SmartSpeed\obj\Debug\SmartSpeed.csproj.AssemblyReference.cache
+E:\Steam\steamapps\common\RimWorld\Mods\Smart-Speed\1.6\Source\SmartSpeed\SmartSpeed\obj\Debug\SmartSpeed.csproj.CoreCompileInputs.cache
+E:\Steam\steamapps\common\RimWorld\Mods\Smart-Speed\1.6\Source\SmartSpeed\SmartSpeed\obj\Debug\SmartSpeed.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Smart-Speed\1.6\Assemblies\SmartSpeed.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Smart-Speed\1.6\Source\SmartSpeed\SmartSpeed\obj\Debug\SmartSpeed.csproj.AssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Smart-Speed\1.6\Source\SmartSpeed\SmartSpeed\obj\Debug\SmartSpeed.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Smart-Speed\1.6\Source\SmartSpeed\SmartSpeed\obj\Debug\SmartSpeed.dll

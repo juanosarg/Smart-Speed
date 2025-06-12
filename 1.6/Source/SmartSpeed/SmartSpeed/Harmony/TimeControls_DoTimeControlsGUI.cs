@@ -48,7 +48,7 @@ namespace SmartSpeed
                     instructionNumber = i;
                     yield return new CodeInstruction(OpCodes.Nop);
                 }else
-                if(found && (i== instructionNumber + 1|| i == instructionNumber + 2))
+                if(found && (i == instructionNumber + 1 || i == instructionNumber + 2))
                 {
                     yield return new CodeInstruction(OpCodes.Nop);
                 }else
