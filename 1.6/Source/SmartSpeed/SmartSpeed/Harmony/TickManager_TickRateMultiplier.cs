@@ -22,7 +22,7 @@ namespace SmartSpeed
 
 			var slower = Find.TickManager.slower;
 			var curTimeSpeed = Find.TickManager.CurTimeSpeed;
-			
+			 
 			
 
 			if (slower.ForcedNormalSpeed)
