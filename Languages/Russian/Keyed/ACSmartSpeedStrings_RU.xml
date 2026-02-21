@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<LanguageData>
+  <SS_EventSpeed>Скорость при событиях</SS_EventSpeed>
+  <EventSpeedLabel>Изменить скорость при событиях</EventSpeedLabel>
+  <SS_Slow>Медленная (половина нормальной скорости)</SS_Slow>
+  <SS_Normal>Обычная</SS_Normal>
+  <SS_Fast>Быстрая (удвоенная нормальная скорость)</SS_Fast>
+  <SS_Half>Половина текущей скорости</SS_Half>
+  <SS_Ignore>Игнорировать (без замедления)</SS_Ignore>
+  
+  <SS_normalSpeed>Нормальная скорость (скорость 1)</SS_normalSpeed>
+  <SS_normalSpeedTooltip>Множитель для нормальной скорости. По умолчанию 1, что означает 60 тиков в секунду.</SS_normalSpeedTooltip>
+  <SS_fastSpeed>Быстрая скорость (скорость 2)</SS_fastSpeed>
+  <SS_fastSpeedTooltip>Множитель для быстрой скорости. По умолчанию 3, что означает 180 тиков в секунду.</SS_fastSpeedTooltip>
+  <SS_superfastSpeed>Очень быстрая скорость (скорость 3)</SS_superfastSpeed>
+  <SS_superfastSpeedTooltip>Множитель для очень быстрой скорости. По умолчанию 6, что означает 360 тиков в секунду.</SS_superfastSpeedTooltip>
+  <SS_ultrafastSpeed>Ультрабыстрая скорость  (скорость 4)</SS_ultrafastSpeed>
+  <SS_ultrafastSpeedTooltip>>Множитель для ультрабыстрой скорости. По умолчанию 15, что означает 900 тиков в секунду. Держите в уме что это не магия. Если ваш компьютер может выдержать 8000 тиков в секунду, оно будет работать. Если нет, то скорость будет ограничена.</SS_ultrafastSpeedTooltip>
+  <SS_Reset>Сбросить</SS_Reset>
+</LanguageData>
